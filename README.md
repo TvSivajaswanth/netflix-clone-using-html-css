@@ -22,5 +22,3 @@ This project replicates the look and feel of Netflix's landing page for learning
 - CSS3  
 
 ---
-
-## 📁 Folder Structure
