@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Netflix Clone</title>
+<style>
+  /* Reset */
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+  body {
+    background-color: #141414;
+    color: #fff;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(20,20,20,0.9), transparent);
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  header nav a {
+    margin-left: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  header nav a:hover {
+    color: #e50914;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/5a1e2f88-0a19-4f02-b224-bc5c79b1297e/44a55c1e-b9de-4b4d-9b3a-29f1d048f056/US-en-20230918-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+  }
+
+  .hero .btn {
+    background-color: #e50914;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .hero .btn:hover {
+    background-color: #f6121d;
+  }
+
+  /* Sections */
+  .section {
+    padding: 50px;
+  }
+
+  .section h2 {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    min-width: 200px;
+    height: 120px;
+    background-color: #333;
+    border-radius: 5px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  /* Footer */
+  footer {
+    background-color: #141414;
+    padding: 50px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  footer a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Movies</a>
+    <a href="#">My List</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Unlimited movies, TV shows, and more.</h1>
+  <p>Watch anywhere. Cancel anytime.</p>
+  <button class="btn">Sign Up Now</button>
+</section>
+
+<section class="section">
+  <h2>Trending Now</h2>
+  <div class="row">
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+1')"></div>
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+2')"></div>
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+3')"></div>
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+4')"></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>New Releases</h2>
+  <div class="row">
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+5')"></div>
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+6')"></div>
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+7')"></div>
+    <div class="card" style="background-image:url('https://via.placeholder.com/200x120?text=Movie+8')"></div>
+  </div>
+</section>
+
+<footer>
+  <p>Questions? Call 1-800-000-0000</p>
+  <p>
+    <a href="#">FAQ</a> | 
+    <a href="#">Help Center</a> | 
+    <a href="#">Terms of Use</a> | 
+    <a href="#">Privacy</a>
+  </p>
+</footer>
+
+</body>
+</html>
