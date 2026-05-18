@@ -7,11 +7,6 @@ This project replicates the look and feel of Netflix's landing page for learning
 
 ---
 
-## 🚀 Demo
-🔗 Live Demo: (Add your deployed link here)
-
----
-
 ## 📌 Features
 - 🎥 Netflix-style UI design  
 - 📱 Fully responsive layout  
